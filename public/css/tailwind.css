@@ -441,6 +441,15 @@ input:checked ~ .dot {
     background-color: #48bb78;
 }
 
+#progress {
+    background: linear-gradient(to right, #F9EC31 var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 4px;
+    z-index: 1;
+}
+
 .container {
   width: 100%;
 }
@@ -534,6 +543,11 @@ input:checked ~ .dot {
   margin-right: 1rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -564,10 +578,6 @@ input:checked ~ .dot {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .block {
@@ -624,6 +634,14 @@ input:checked ~ .dot {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .max-w-xl {
@@ -826,6 +844,11 @@ input:checked ~ .dot {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-20 {

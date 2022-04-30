@@ -2,7 +2,7 @@
     <div class="font-sans">
         <p class="text-base md:text-sm text-green-500 font-bold">
             &lt;
-            <a href="#" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">
+            <a href="/" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">
                 Back to listing
             </a>
         </p>
@@ -45,10 +45,16 @@
 <!-- /Subscribe-->
 
 <!--Author-->
-<div class="flex w-full items-center font-sans px-4 py-12">
+<div class="flex w-full items-center font-sans px-4 py-10">
     <img class="w-10 h-10 rounded-full mr-4" src="{{ author:avatar }}" alt="{{ author:name }}">
     <div class="flex-1 px-2">
-        <p class="text-base font-bold text-base md:text-xl leading-none mb-2">{{ author:name }}</p>
+        <div class="w-full">
+
+            <p class="text-base font-bold text-base md:text-xl leading-none mb-2">{{ author:name }}</p>
+        </div>
+        <div class="my-1 w-2/3">
+            <p class="text-base leading-none mb-2">{{ author:bio }}</p>
+        </div>
     </div>
     <div class="justify-end">
         <button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">Read More</button>
@@ -62,7 +68,7 @@
 <!--Next & Prev Links-->
 <div class="font-sans flex justify-between content-center px-4 pb-12">
 
-    {{ collection:previous in="blog" as="posts" limit="2" sort="date:desc" }}
+    {{ collection:previous in="blog" as="posts" limit="2" sort="date:asc" }}
  
     {{ if no_results }}
         <div class="text-left">
