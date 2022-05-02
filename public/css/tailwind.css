@@ -580,6 +580,10 @@ input:checked ~ .dot {
   margin-right: 0.75rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .block {
   display: block;
 }
